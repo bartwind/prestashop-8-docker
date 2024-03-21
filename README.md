@@ -1,3 +1,20 @@
+Fix: There is no image type defined for "products".
+at line 364 in file src/Adapter/Image/ImageRetriever.php:
+
+```
+INSERT INTO `{PREFIX}_image_type` (`id_image_type`, `name`, `width`, `height`, `products`, `categories`, `manufacturers`, `suppliers`, `stores`)
+VALUES
+	(10, 'large_banner', 960, 400, 0, 1, 0, 0, 0),
+	(9, 'product_listing', 220, 220, 1, 1, 1, 1, 0),
+	(8, 'category_default', 960, 350, 0, 1, 0, 0, 0),
+	(7, 'home_default', 250, 250, 1, 0, 0, 0, 0),
+	(6, 'large_default', 500, 500, 1, 0, 0, 0, 0),
+	(5, 'medium_default', 300, 300, 1, 1, 1, 1, 0),
+	(4, 'small_default', 125, 125, 1, 1, 1, 1, 0),
+	(3, 'cart_default', 80, 80, 1, 0, 0, 0, 0);
+```
+chmod 0777 for require files/dir if still doeasn't work
+
 About PrestaShop
 --------
 
