@@ -1,0 +1,43 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+#contact-link a {
+  margin-top: 0.9375rem;
+  margin-right: 10px;
+}
+
+#search_widget {
+  float: unset;
+  min-width: 30.5rem;
+}
+
+.nav-header-right-boxes {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.nav-header-right-boxes .nav-header-box {
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  padding-top: 0px;
+}
+
+.nav-header-right-boxes .nav-header-box.box-divide {
+  border-left: 1px solid #999999;
+}
+
+#header .header-top>.container>.row:first-of-type {
+  justify-content: space-between;
+}
+
+#header .header-top>.container>.row:first-of-type::after {
+  content: unset;
+}
+
+.header-right-nav {
+  padding-top: 12px;
+}
